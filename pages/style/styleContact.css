@@ -1,0 +1,173 @@
+:root {
+  --color-primary: #f2f5f9;
+  --color-secondary: #ff9c1a;
+  --color-tertiary: #ec1b09;
+  --color-white: #ffffff;
+}
+
+.navbar li:nth-child(1) a {
+  background: #e1e8ef;
+  color: black;
+}
+
+.navbar li:nth-child(3) a {
+  border-radius: 20px;
+  background: var(--color-secondary);
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuNav {
+  padding: 0.6rem 5rem;
+}
+
+.w-phone {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper-phone,
+.wrapper-phoneI {
+  border-radius: 18px;
+  padding: 2rem;
+  margin-right: 1rem;
+}
+
+.wrapper-phone {
+  background: #ffeed9;
+}
+
+.wrapper-phoneI {
+  background: #f2f7fc;
+}
+
+.phone {
+  margin-top: 0.5rem;
+  margin-left: 2.3rem;
+}
+
+.phone p {
+  margin: 0;
+}
+
+.wrapper-phone .wrapper-phoneI,
+p {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-phone img,
+.wrapper-phoneI img {
+  margin-right: 0.5rem;
+}
+
+/* .contact {
+  margin-top: 2rem;
+  background: #f8fbfb;
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+
+.data {
+  margin-top: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.data :last-child {
+  text-decoration: none;
+  color: black;
+  border: 1px solid RGB(238, 46, 11);
+  padding: 1rem;
+  border-radius: 15px;
+} */
+
+/* Your existing styles */
+
+.data p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.data input[type="text"],
+.data input[type="email"],
+.data textarea {
+  resize: none;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.2rem;
+}
+
+/* .btn {
+  color: red;
+  border: 1px solid;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.submit-btn {
+  color: black;
+  text-decoration: none;
+} */
+
+.btn {
+  color: red;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  background-image: linear-gradient(to bottom, #ff9c1a, #ee1d10);
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: RGB(238, 46, 11);
+  color: white;
+}
+
+.contact {
+  background: #f8fbfb;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+
+.about {
+  max-height: 600px;
+  overflow-y: auto;
+}
+.about::-webkit-scrollbar {
+  width: 3px;
+}
+
+.about::-webkit-scrollbar-track {
+  background-color: var(--color-secondary);
+}
+
+.about::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+}
+
+.w-data {
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,301 @@
+:root {
+  --color-primary: #f2f5f9;
+  --color-secondary: #ff9c1a;
+  --color-tertiary: #ec1b09;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-primary);
+}
+
+.header {
+  padding: 2rem 16rem 0;
+}
+
+.content-wrapper {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  margin: 1rem 8rem;
+}
+
+.profileCards {
+  border-radius: 14px;
+  min-height: 88vh;
+  background: var(--color-white);
+  padding: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile img {
+  border-radius: 15px;
+}
+
+.profile > span {
+  padding: 0.6rem;
+  color: rgb(148 163 184);
+}
+
+.media {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.card {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-download {
+  margin: 2rem;
+  border: none;
+}
+
+.btn-a a {
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 22px;
+  background: var(--color-secondary);
+  padding: 0.8rem 1rem;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.media > a img {
+  background: var(--color-primary);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.wrapperCard {
+  background: var(--color-primary);
+  padding: 2.5rem;
+  margin-top: 0.6rem;
+  border-radius: 10px;
+}
+
+.wrapperContact {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.contacts p:nth-child(1) {
+  color: rgb(148 163 184);
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 13%;
+  right: 15%;
+  transform: translateY(-50%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.menuNav {
+  padding: 0.6rem 5rem;
+  border: 2px solid gainsboro;
+  border-radius: 12px;
+  gap: 2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li:nth-child(1) a {
+  border-radius: 20px;
+  background: var(--color-secondary);
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.navbar ul li a {
+  border-radius: 20px;
+  background: #e1e8ef;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.about-me {
+  margin-left: 1rem;
+  padding: 1rem;
+  width: 65%;
+  background-color: var(--color-white);
+  color: var(--color-white);
+  border-radius: 12px;
+  margin-top: 11rem;
+  color: black;
+  position: relative;
+}
+
+.about {
+  padding-left: 3rem;
+}
+
+.wrapper-box {
+  margin-top: 1rem;
+}
+
+.about-me-line {
+  right: 520px;
+  top: 6%;
+  position: absolute;
+  background: var(--color-secondary);
+  width: 300px;
+  height: 2px;
+}
+
+.about-me-p {
+  margin-top: 1rem;
+}
+
+.about-me-h1 {
+  padding-top: 0.8rem;
+}
+
+.about-me-box {
+  gap: 1rem;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-me-box h2 {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.box1 {
+  background-color: #ffebd1;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.box2 {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.box3 {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 15px;
+}
+.box4 {
+  background-color: #ffebd1;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 1126px) {
+  .about-me-box {
+    display: block;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 1496px) {
+  .about-me {
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .about-me-line {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100px;
+  }
+
+  .about {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-me-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    margin: 2rem auto;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .about-me-line {
+    width: 80px;
+  }
+
+  .about-me-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-me-box {
+    display: block;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .menuNav {
+    margin-bottom: 2rem;
+  }
+}
