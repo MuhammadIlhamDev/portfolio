@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 2px; */
 }
 
 .menuNav {
@@ -101,11 +100,6 @@
   font-weight: bold;
 }
 
-/* .wrapper-skills {
-  background: red;
-  margin-top: 1rem;
-} */
-
 .skills {
   margin-top: 1rem;
   gap: 0.4rem;
@@ -119,4 +113,39 @@
   background: var(--color-primary);
   padding: 0.6rem;
   border-radius: 10px;
+}
+
+@media (max-width: 1025px) {
+  .wrapperI,
+  .wrapperII {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .wrapperI {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-me-education,
+  .about-me-experience {
+    gap: 2rem;
+  }
+
+  .wrapperII .box {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .wrapperI,
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+   
+  }
 }

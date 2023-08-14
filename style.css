@@ -18,14 +18,13 @@ body {
 }
 
 .header {
-  padding: 2rem 16rem 0;
+  padding: 2rem 10rem 0;
 }
 
 .content-wrapper {
   justify-content: center;
   display: flex;
   position: relative;
-  margin: 1rem 8rem;
 }
 
 .profileCards {
@@ -104,8 +103,8 @@ body {
 
 .navbar {
   position: fixed;
-  top: 13%;
-  right: 15%;
+  top: 11%;
+  right: 10%;
   transform: translateY(-50%);
   position: absolute;
   display: flex;
@@ -154,7 +153,7 @@ body {
   background-color: var(--color-white);
   color: var(--color-white);
   border-radius: 12px;
-  margin-top: 11rem;
+  margin-top: 10rem;
   color: black;
   position: relative;
 }
@@ -168,8 +167,8 @@ body {
 }
 
 .about-me-line {
-  right: 520px;
-  top: 6%;
+  right: 662px;
+  top: 5.4%;
   position: absolute;
   background: var(--color-secondary);
   width: 300px;
@@ -188,7 +187,7 @@ body {
   gap: 1rem;
   display: flex;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .about-me-box h2 {
@@ -220,27 +219,24 @@ body {
   border-radius: 15px;
 }
 
-@media (max-width: 1126px) {
-  .about-me-box {
-    display: block;
-  }
-
-  .box1,
-  .box2,
-  .box3,
-  .box4 {
-    padding: 1rem;
-    margin: 1rem 0;
-  }
+.about {
+  max-height: 600px;
+  overflow-y: auto;
 }
 
-@media (max-width: 1496px) {
-  .about-me {
-    width: 80%;
-    padding: 1rem;
-    text-align: center;
-  }
+.about::-webkit-scrollbar {
+  width: 3px;
+}
 
+.about::-webkit-scrollbar-track {
+  background-color: var(--color-secondary);
+}
+
+.about::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 1689px) {
   .about-me-line {
     right: auto;
     left: 50%;
@@ -248,31 +244,75 @@ body {
     top: 0;
     width: 100px;
   }
+}
 
-  .about {
-    padding-left: 0;
-    text-align: center;
-  }
+/* responsive-Large Desktop: */
 
-  .about-me-box h2 {
-    font-size: 1.5rem;
-  }
-
-  .box1,
-  .box2,
-  .box3,
-  .box4 {
-    padding: 1rem;
+@media (max-width: 1441px) {
+  .header {
+    padding: 2rem 5rem 0;
   }
 }
 
-@media (max-width: 480px) {
-  .about-me {
-    margin: 2rem auto;
-    width: 90%;
-    padding: 1rem;
+/* responsive-Medium Laptop/Desktop */
+
+@media (max-width: 1025px) {
+  .content-wrapper {
+    padding: 0 2rem;
   }
 
+  .header {
+    padding: 2rem 4rem 0;
+  }
+
+  .navbar {
+    top: 5%;
+    right: 8%;
+  }
+
+  .about-me {
+    margin-top: 8rem;
+  }
+
+  .about {
+    padding: 0;
+  }
+}
+
+/* responsive-Small Tablet/Laptop: */
+
+@media (max-width: 977px) {
+  .profileCards {
+    min-height: 0;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .navbar {
+    position: static;
+    transform: none;
+  }
+
+  .menuNav {
+    border: none;
+  }
+
+  .navbar li:nth-child(1) a,
+  .navbar ul li a {
+    padding: 0.8rem;
+  }
+
+  .about-me {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* responsive-Mobile (Landscape) / Small Tablet: */
+
+@media (max-width: 584px) {
   .about-me-line {
     width: 80px;
   }
@@ -294,8 +334,14 @@ body {
   }
 }
 
-@media (max-width: 1366px) {
-  .menuNav {
-    margin-bottom: 2rem;
+@media (max-width: 360px) {
+  .content-wrapper {
+    width: 140%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    top: 3%;
   }
 }
